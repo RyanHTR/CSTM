@@ -51,8 +51,6 @@ def test(opt, savedir, dataloader, model, spatials):
     print("Resume from ", resume)
     if os.path.isfile(resume):
         checkpoint = torch.load(resume)
-        opt.start_epoch = checkpoint['epoch']
-
         save_dict = checkpoint['state_dict']
         model_dict = model.state_dict()
         trash_vars = [k for k in save_dict.keys() if k not in model_dict.keys()]

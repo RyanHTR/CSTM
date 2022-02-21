@@ -78,8 +78,8 @@ class VideoTextDataset(Dataset):
         self.corpus = Corpus('{}/word_embedding'.format(opt.project_root))
 
         # change frame_root here
-        self.frame_root = '/mnt/data2/hsf/Code/CVPR2021/A2D/data/Release/frames_cv2'
-        self.mask_root = '/mnt/data2/hsf/Code/CVPR2021/A2D/data/a2d_annotation_with_instances'
+        self.frame_root = 'A2D_path/Release/frames_cv2'
+        self.mask_root = 'A2D_path/a2d_annotation_with_instances'
         self.im_size = opt.resize
         self.opt = opt
 
