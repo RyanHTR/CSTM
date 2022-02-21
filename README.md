@@ -3,7 +3,7 @@
 Implementation for Collaborative Spatial-Temporal Modeling for Language-Queried Video Actor Segmentation, CVPR 2021. [PDF](https://arxiv.org/abs/2105.06818).
 
 ## Setup
-* Python3.8
+* Python 3.8
 * PyTorch 1.9
 * CUDA 11
 
